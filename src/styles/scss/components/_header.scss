@@ -1,0 +1,77 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    background: #212427;
+
+    .primary__title {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: bold;
+        color: #CACACA;
+    }
+
+    &__body, &__auth {
+        display: flex;
+        align-items: center;
+    }
+
+    &__searh {
+        display: inline-flex;
+        width: 153px;
+        height: 32px;
+        margin-right: 25px;
+        margin-left: 45px;
+        border: 1px solid #4C4C4C;
+        border-radius: 8px;
+    }
+
+    &__input {
+        font-size: 12px;
+        color: #979797;
+        background: none;
+        border: 0;
+    }
+
+    &__search-icon {
+        padding: 0 11px 0 18px;
+    }
+
+    &__name {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #CACACA;
+    }
+
+    &__name-icon {
+        padding: 0 11px;
+    }
+
+    &__setting {
+        position: relative;
+        width: 8px;
+        height: 4px;
+        cursor: pointer;
+    }
+
+    &__setting::before{
+        content: '';
+        position: absolute;
+        left: 1px;
+        width: 1px;
+        height: 8px;
+        background-color: #CACACA;
+        transform: rotate(-45deg);
+    }
+    
+    .header__setting::after{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 8px;
+        right: 0;
+        background-color: #CACACA;
+        transform: rotate(45deg);
+    }
+}

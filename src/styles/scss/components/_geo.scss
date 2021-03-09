@@ -1,0 +1,116 @@
+.geo {
+    padding: 23px;
+    @include border;
+
+    .primary__title {
+        @include primaryTitle;
+    }
+
+    a {
+        @include checkText;
+        color: #979797;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: #CACACA;
+    }
+
+    &__country-name {
+        @include countryName;
+    }
+
+    &__value {
+        @include countryValue;
+    }
+
+    &__header {
+        display: grid;
+        grid-template-columns: 205px 1fr 1fr;
+        grid-template-rows: 30px;
+        grid-column-gap: 10px;
+        align-items: center;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(2, 140px);
+        grid-column-gap: 15px;
+    }
+
+    &__header-country {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 9px;
+        padding-top: 20px;
+    }
+}
+
+.progress {
+    position: relative;
+    width: 140px;
+    height: 10px;
+    background: #4D4D4D;
+    border-radius: 9px;
+}
+
+.progress--russia::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: calc(100% - 12px);
+    height: 10px;
+    background: #7F7FD5;
+    border-radius: 6px;
+}
+
+.progress--ukraine::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 5px;
+    height: 10px;
+    background: #7F7FD5;
+    border-radius: 6px;
+}
+
+.progress--mongolia::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 10px;
+    background: #7F7FD5;
+    border-radius: 6px;
+}
+
+.progress--china::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 13px;
+    height: 10px;
+    background: #7F7FD5;
+    border-radius: 6px;
+}
+
+.progress--usa::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 5px;
+    height: 10px;
+    background: #7F7FD5;
+    border-radius: 6px;
+}
+
+.progress--other::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 10px;
+    background: #7F7FD5;
+    border-radius: 6px;
+}

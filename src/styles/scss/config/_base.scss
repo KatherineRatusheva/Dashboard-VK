@@ -1,0 +1,19 @@
+.wrap {
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../../../src/images/background/background-top.svg), url(../../../src/images/background/background-bottom.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.conteiner {
+    display: flex;
+    margin: 10em auto;
+    max-width: 1280px;
+}
+
+body {
+    font-family: 'Gilroy';
+}

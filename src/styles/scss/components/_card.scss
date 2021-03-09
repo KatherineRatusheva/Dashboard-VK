@@ -1,0 +1,64 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 23px;
+    @include border;
+
+    .primary__title {
+        @include primaryTitle;
+    }
+
+    .card__number {
+        @include cardNumber;
+    }
+
+    .card__value {
+        @include cardValue;
+    }
+}
+
+.card__up, .card__down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__up {
+    padding-bottom: 37px;
+}
+
+.card__down-value {
+    display: flex;
+}
+
+.card__setting {
+    position: relative;
+    top: 15px;
+    right: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #979797;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #979797;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #979797;
+    }
+}
+
+

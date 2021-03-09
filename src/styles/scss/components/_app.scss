@@ -1,0 +1,48 @@
+.app {
+    display: grid;
+    width: 1182px;
+    padding: 3em;
+
+    grid-template-columns: repeat(3, minmax(200px, 341px));
+    grid-template-rows: 60px 148px 242px 242px;
+    grid-gap: 32px;
+    grid-template-areas: 
+    'header header header'
+    'card1 card2 card3'
+    'audience audience reach'
+    'gender gender geo';
+    background-color: #212427;
+}
+
+    .header {
+        grid-area: header;
+    }
+
+    .card--friends {
+        grid-area: card1;
+    }
+
+    .card--vasitors {
+        grid-area: card2;
+    }
+
+    .card--followers {
+        grid-area: card3;
+    }
+
+    .audience {
+        grid-area: audience;
+    }
+
+    .reach {
+        grid-area: reach;
+    }
+
+    .gender {
+        grid-area: gender;
+    }
+
+    .geo {
+        grid-area: geo;
+    }
+

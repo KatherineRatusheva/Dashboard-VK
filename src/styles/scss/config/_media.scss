@@ -1,0 +1,145 @@
+@media screen and (max-width: 1025px) {
+    .conteiner {
+        margin: 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-menu {
+        top: 1em;
+        left: 2em;
+    }
+
+    .reach__check {
+        padding-left: 2.5em;
+    }
+
+    .audience__graph, .gender__graph {
+        width: 100%;
+    }
+
+    .geo__header {
+        grid-template-columns: 155px 1fr 1fr;
+    }
+
+    .geo__body {
+        grid-template-columns: repeat(2, 115px);
+    }
+
+    .progress {
+        width: 115px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card .primary__title, .card .card__number, .card .card__value {
+        font-size: 16px;
+    }
+
+    .app {
+        grid-template-columns: repeat(3, minmax(150px, 205px));
+        grid-template-areas: 
+        'header header header'
+        'card1 card2 card3'
+        'audience audience audience'
+        'gender gender gender'
+        'reach geo geo';
+    }
+
+    .reach {
+        margin-right: -9em;
+    }
+
+    .reach__check {
+        padding-left: 5.5em;
+    }
+
+    .geo {
+        margin-left: 9em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    .card .primary__title, .card .card__number, .card .card__value {
+        font-size: 18px;
+    }
+
+    .app {
+        padding: 2em;
+        grid-template-columns: calc(100vw - 4em);
+        grid-template-rows: 1fr repeat(3, 148px) 242px 242px 192px 242px;
+        grid-template-areas: 
+        'header'
+        'card1'
+        'card2'
+        'card3'
+        'audience'
+        'reach'
+        'gender'
+        'geo';
+    }
+
+    .audience__header, .gender__header {
+        grid-template-columns: 1fr;
+        grid-row-gap: 6px;
+    }
+
+    .header {
+        padding-top: 1em;
+    }
+
+    .header__auth {
+        display: none;
+    }
+    
+    .header__body {
+        width: calc(100vw - 4em);
+        justify-content: space-between;
+    }
+
+    .header__searh {
+        margin: 0;
+    }
+
+    .reach, .geo {
+        margin: 0;
+    }
+
+    .geo__header {
+        grid-template-columns: 215px 1fr 1fr;
+    }
+
+    .geo__body {
+        grid-template-columns: repeat(2, 125px);
+        grid-column-gap: 3em;
+    }
+
+    .progress {
+        width: 125px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .header .primary__title {
+        font-size: 25px;
+    }
+
+    .reach__check {
+        padding-left: 3.5em;
+    }
+
+    .geo__header {
+        grid-template-columns: 175px 1fr 1fr;
+    }
+
+    .geo__body {
+        grid-column-gap: 1em;
+    }
+}

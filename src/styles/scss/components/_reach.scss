@@ -1,0 +1,96 @@
+.reach {
+    padding: 22px;
+    @include border;
+
+    .primary__title {
+        @include primaryTitle;
+        padding-bottom: 38px
+    }
+
+    label {
+        @include checkText;
+    }
+}
+
+.reach__body {
+    display: flex;
+}
+
+.reach__graph {
+    position: relative;
+}
+
+.reach__graph::before {
+    content: "14%";
+    position: absolute;
+    top: 30px;
+    left: 105px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.reach__graph::after {
+    content: "86%";
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.img__desktop {
+    position: absolute;
+    left: 77px;
+    top: 6px;
+}
+
+.reach__check {
+    padding-left: 4.7em;
+}
+
+.reach-checkbox {
+    display: none;
+}
+
+.label__desktop::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    margin-bottom: 11px;
+    vertical-align: -webkit-baseline-middle;
+    border: 1.5px solid #E786D7;
+    background-color: #E786D7;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.label__mobile::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border: 1.5px solid #7F7FD5;
+    background-color: #7F7FD5;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.reach-checkbox:checked + .label__desktop::before {
+    background: none;
+}
+
+.reach-checkbox:checked + .label__mobile::before {
+    background: none;
+}

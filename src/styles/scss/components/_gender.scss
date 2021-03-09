@@ -1,0 +1,63 @@
+.gender {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:  23px 23px 0 23px;
+    @include border;
+
+    &__header {
+        display: grid;
+        grid-template-columns: 1fr 70px 85px;
+        grid-column-gap: 1em;
+    }
+
+    .primary__title {
+        @include primaryTitle;
+    }
+
+    label {
+        @include checkText;
+    }
+}
+
+.gender-checkbox {
+    display: none;
+}
+
+.label-women::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 1.5px solid #E786D7;
+    background-color: #E786D7;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.label-men::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 1.5px solid #7F7FD5;
+    background-color: #7F7FD5;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.gender-checkbox:checked + .label-women::before {
+    background: none;
+}
+
+.gender-checkbox:checked + .label-men::before {
+    background: none;
+}
